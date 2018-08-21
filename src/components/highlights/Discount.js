@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
+import Button from "../button/Button"
 
 
 class Discount extends Component {
@@ -19,10 +20,10 @@ class Discount extends Component {
             })
         }
     }
-    componentDidUpdate(){
+    componentDidUpdate() {
         setTimeout(() => {
             this.percentage()
-        }, 80);
+        }, 30);
     }
     render() {
         return (
@@ -40,9 +41,12 @@ class Discount extends Component {
                         <div className="discount_description">
                             <h3>Purchase tickets before 25th of May</h3>
                             <p>When it comes to fares and fees, we don't want there to be any unwanted surprises. Take the time to read through this section, so you know exactly what fees you can expect—and even better, what fees you can avoid altogether.</p>
-                            <div>
-                                button
-                </div>
+                            <Button
+                              text="Purchase Tickets"
+                              bck = "#ffa800"
+                              color = "#ffffff"
+                              link = "https://seatgeek.com/ariana-grande-tickets"
+                            />
                         </div>
                     </Slide>
 
